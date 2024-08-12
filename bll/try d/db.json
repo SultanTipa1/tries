@@ -1,0 +1,40 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Revitalizing Face Serum",
+        "image": "images/images.jpeg",
+        "price": 29.99,
+        "description": "A powerful serum to rejuvenate your skin and provide essential hydration."
+      },
+      {
+        "id": 2,
+        "name": "Matte Lipstick",
+        "image": "images/16495871249032af330ac71744e868805242ca721980c.webp",
+        "price": 19.99,
+        "description": "A long-lasting matte lipstick that gives you a bold, vibrant look."
+      },
+      {
+        "id": 3,
+        "name": "Magic Cream Moisturizer with Hyaluronic Acid",
+        "image": "images/Magic Cream.jpg",
+        "price": 200.00,
+        "description": "A visibly age-defying moisturizer with hyaluronic acid to plump the look of skin and diminish the look of wrinkles, leaving your complexion visibly glowing and prepped for flawless makeup."
+      },
+      {
+        "id": 4,
+        "name": "Bath & Body Works Dahlia Fragrance Mist",
+        "image": "images/Bath & Body works Dahlia Fragrance Mist.jpg",
+        "price": 14.99,
+        "description": "A refreshing body mist that keeps you smelling great all day."
+      },
+      {
+        "id": 5,
+        "name": "Yhe Mascara Bond",
+        "image": "images/Maskara.jpg",
+        "price": 22.99,
+        "description": "Wear your Lash Bond any time of the day! The Mascara Bond has an advanced ultra-lengthening Lash Serum for beautifully long, remarkably strong lashes. <br> This tubing mascara is powered by Growth Bond Complex™ to promote long-term stimulation, and the Flake-Free Liquid Fiber Serum that combines buildable fibers to add dramatic length + curl, creating the glamour of faux-lashes without the glue."
+      }
+    ]
+  }
+  

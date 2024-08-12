@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cart Page for Dream Cosmetics" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Cart</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Navigation content here -->
+    </nav>
+
+    <div class="cart-page">
+        <h1 class="cart-title">My Cart</h1>
+        <div class="cart-item">
+            <img src="assets/33c874e86c552c93d5acf33fe76b7aaa.image.548x505.jpg" alt="Product Image" />
+            <div class="cart-item-details">
+                <h2 class="cart-item-title">Nykaa Matte To Last! Liquid Lipstick</h2>
+                <p class="cart-item-price">KSH 599</p>
+                <button class="btn cart-remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="price-details">
+            <h2>Price Details</h2>
+            <p>Price: KSH 599</p>
+            <p>Discount: -KSH 99</p>
+            <p>Delivery Charges: KSH 999</p>
+            <p>Total: KSH 599</p>
+            <button class="btn place-order-btn">Place Order</button>
+        </div>
+    </div>
+
+    <div id="addressModal" class="modal">
+        <div class="modal-content">
+            <h2>Add Address</h2>
+            <form id="addressForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required />
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required />
+
+                <button type="submit" class="btn save-btn">Save</button>
+                <button type="button" class="btn close-btn" onclick="closeModal()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Footer content here -->
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

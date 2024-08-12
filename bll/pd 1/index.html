@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section Start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light justify-content-between">
+                <span class="toggle_icon" onclick="openNav()">☰</span>
+                <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                <div class="cart_icon">
+                    <a href="#" onclick="toggleCartModal()">
+                        <img src="images/bag-icon.png" alt="Cart">
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Section Start -->
+    <div class="product_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="product_taital">Our Products</h1>
+                    <p class="product_text">Explore our wide range of beauty products.</p>
+                </div>
+            </div>
+            <div class="product_section_2 layout_padding" id="products-container">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <!-- Product Section End -->
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="product-modal">
+        <div class="product-modal-content">
+            <span class="close" onclick="toggleProductModal()">&times;</span>
+            <div id="product-details">
+                <!-- Product details will be dynamically inserted here -->
+            </div>
+            <button onclick="addToCartFromModal()">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" onclick="toggleCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <h3>Total: Ksh.<span id="cart-total">0</span></h3>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer Section Start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png" alt="Footer Logo"></a></div>
+            <div class="contact_section_2">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3 class="address_text">Contact Us</h3>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> Address : 224-80200</li>
+                            <li><i class="fa fa-phone"></i> Call : +254798698629</li>
+                            <li><i class="fa fa-envelope"></i> Email : josephngumaugush@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer_logo_1"><a href="index.html"><img src="images/footer-logo.png" alt="Footer Logo"></a></div>
+                        <p class="dummy_text">We provide the best cosmetic products at the most affordable prices.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 class="address_text">Best Products</h3>
+                        <p class="ipsum_text">Explore our best-selling cosmetic products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social_icon">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <script src="script.js"></script>
+</body>
+</html>

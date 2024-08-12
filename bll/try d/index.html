@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Store - Best Products for You</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Discover the best cosmetics at unbeatable prices. Shop now for premium skincare, makeup, and beauty products.">
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="cart_icon">
+                    <a href="#" onclick="toggleCartModal()">
+                        <img src="images/bag-icon.png" alt="Cart">
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <a href="index.html">Home</a> > <a href="#">Shop</a> > Products
+        </div>
+    </nav>
+
+    <!-- Search and Filter Section Start -->
+    <div class="search-filter-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products..." onkeyup="searchProducts()">
+            </div>
+            <div class="filter-sort">
+                <select id="sort-select" onchange="sortProducts()">
+                    <option value="default">Sort by</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+                <select id="filter-select" onchange="filterProducts()">
+                    <option value="all">All Categories</option>
+                    <option value="skincare">Skincare</option>
+                    <option value="makeup">Makeup</option>
+                    <option value="fragrance">Fragrance</option>
+                    <option value="haircare">Haircare</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- Search and Filter Section End -->
+
+    <!-- Product Section Start -->
+    <div class="product_section layout_padding">
+        <div class="container">
+            <h1 class="section-title">Our Products</h1>
+            <div class="product_grid" id="products-container">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <!-- Product Section End -->
+
+    <!-- Discount Banner -->
+    <div class="discount-banner">
+        <div class="container">
+            <h2>Exclusive Discounts</h2>
+            <p>Get up to 50% off on selected items!</p>
+        </div>
+    </div>
+
+    <!-- FAQ Section Start -->
+    <div class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li>How do I place an order?</li>
+                <li>What payment methods do you accept?</li>
+                <li>How can I track my order?</li>
+                <li>What is your return policy?</li>
+            </ul>
+        </div>
+    </div>
+    <!-- FAQ Section End -->
+
+    <!-- Contact Section Start -->
+    <div class="contact_section layout_padding">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/footer-logo.png" alt="Footer Logo"></a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="product-modal">
+        <div class="product-modal-content">
+            <span class="close" onclick="toggleProductModal()">&times;</span>
+            <div id="product-details">
+                <!-- Product details will be dynamically inserted here -->
+            </div>
+            <button onclick="addToCartFromModal()">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" onclick="toggleCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <h3>Total: $<span id="cart-total">0</span></h3>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

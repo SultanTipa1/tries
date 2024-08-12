@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header_section {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.cart_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.product_section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.product_taital {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product_text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.product_box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.product_box img {
+    width: 100%;
+    height: auto;
+}
+
+.price_text {
+    font-size: 22px;
+    color: #000;
+    margin-top: 15px;
+}
+
+.buy_bt ul {
+    list-style: none;
+    padding: 0;
+}
+
+.buy_bt ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.buy_bt ul li a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Modal Styles */
+.product-modal, .cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.product-modal-content, .cart-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#product-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#cart-items .cart-item {
+    margin-bottom: 10px;
+}

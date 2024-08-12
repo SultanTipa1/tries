@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Moisturizing Cream",
+            "description": "A rich cream that provides deep hydration and nourishment.",
+            "price": 1200,
+            "image": "images/product1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Sunscreen SPF 50",
+            "description": "A lightweight sunscreen with SPF 50 protection.",
+            "price": 800,
+            "image": "images/product2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Lip Balm",
+            "description": "A soothing lip balm that keeps your lips soft and hydrated.",
+            "price": 799,
+            "image": "images/product3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Face Wash",
+            "description": "A gentle face wash that cleanses without stripping moisture.",
+            "price": 1299,
+            "image": "images/product4.jpg"
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ishita Keshawani" />
+    <meta name="description" content="Search and Wishlist pages of Cosmetics" />
+    <meta name="keywords" content="beauty store, e-commerce, react.js" />
+    <link rel="stylesheet" href="https://felizui.netlify.app/styles/index.css" />
+    <link rel="stylesheet" href="/pages/products/products.css" />
+    <link rel="stylesheet" href="/pages/wishlist/wishlist.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/Stunners.png" />
+    <title>Cosmetics</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar semibold-font-weight">
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <a class="nav-icon-link nav-link link-no-style hide-icon" href="/index.html">
+                <img class="logoimage" src="/assets/Stunners.png" alt="Cosmetics Logo" />
+                <span class="small-fontsize">Cosmetics</span>
+            </a>
+            <a class="nav-link link-no-style nav-home" href="/index.html">Home</a>
+            <a class="nav-link link-no-style nav-products" href="/pages/products/products.html">Products</a>
+            <div class="mainMenu">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search on Cosmetics" />
+                </div>
+                <a href="/pages/Authentication/login/login.html" class="link-no-style nav-link nav-icon-link">
+                    <i class="fas fa-user hide-icon"></i>
+                    <span class="small-fontsize">Login</span>
+                </a>
+                <a href="/pages/wishlist/wishlist.html" class="link-no-style nav-link nav-icon-link">
+                    <i class="fas fa-heart hide-icon"><span class="number-badge">0</span></i>
+                    <span class="small-fontsize">Wishlist</span>
+                </a>
+                <a href="/pages/cart/cart.html" class="link-no-style nav-link nav-icon-link">
+                    <i class="fas fa-cart-shopping hide-icon"><span class="number-badge">0</span></i>
+                    <span class="small-fontsize">Cart</span>
+                </a>
+                <div class="closeMenu">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="search-page">
+                <div class="search-result">Search results for "Liquid Lipstick" - 1 item</div>
+                <div class="cards-list">
+                    <div class="card product-card">
+                        <div class="card-padding">
+                            <img class="product-img" src="assets/33c874e86c552c93d5acf33fe76b7aaa.image.548x505.jpg" alt="Liquid Lipstick" />
+                            <div class="product-card-title bold-font-weight">
+                                Nykaa Matte To Last! Liquid Lipstick
+                            </div>
+                            <div class="card-PRICE">
+                                <span class="gray-color">PRICE:</span> KSH599
+                            </div>
+                            <div class="rating small-fontsize">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-card-footer pink-color">
+                            <i class="far fa-heart card-footer-icon"></i>
+                            <button class="btn card-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wishlist">
+                <div class="card product-card">
+                    <div class="card-padding">
+                        <img class="product-img" src="assets/768faee24e0825d71af0beb0eaaf5922.image.297x297.jpg" alt="Liquid Lipstick" />
+                        <div class="product-card-title bold-font-weight">
+                            Nykaa Matte To Last! Liquid Lipstick
+                        </div>
+                        <div class="card-PRICE"><span class="gray-color">PRICE:</span> KSH599</div>
+                        <div class="rating small-fontsize">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-card-footer pink-color">
+                        <i class="fas fa-heart card-footer-icon"></i>
+                        <button class="btn card-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for additional wishlist items -->
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-items">
+                <div class="made-by">
+                    Made with <i class="fas fa-heart footer-icon"></i> By Joseph Ngumbau
+                </div>
+                <div>
+                    <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github footer-social-icon"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"><i
+                            class="fab fa-twitter footer-social-icon"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin footer-social-icon"></i></a>
+                </div>
+                <div class="copy-right">© 2024 Cosmetics</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
